@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
+		607B27721B7BC01000FE657D /* ARInstagramFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */; };
+		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
+		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
+		607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */; };
 		60B1370C1B7BBDE70081A522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B1370B1B7BBDE70081A522 /* main.m */; };
 		60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B1370E1B7BBDE70081A522 /* AppDelegate.m */; };
-		60B137121B7BBDE70081A522 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B137111B7BBDE70081A522 /* ViewController.m */; };
 		60B137151B7BBDE70081A522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B137131B7BBDE70081A522 /* Main.storyboard */; };
 		60B137171B7BBDE70081A522 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B137161B7BBDE70081A522 /* Images.xcassets */; };
 		60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B137181B7BBDE70081A522 /* LaunchScreen.xib */; };
 		60B137261B7BBDE70081A522 /* ArtsygramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B137251B7BBDE70081A522 /* ArtsygramTests.m */; };
+		60FD88BA1B7BF542001DA78F /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88B91B7BF542001DA78F /* Graph.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		607B27701B7BC01000FE657D /* ARInstagramFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARInstagramFeedViewController.h; sourceTree = "<group>"; };
+		607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARInstagramFeedViewController.m; sourceTree = "<group>"; };
+		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
+		607B27741B7BC04500FE657D /* APINetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APINetworkModel.m; sourceTree = "<group>"; };
+		607B27761B7BC1A200FE657D /* Gram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gram.h; sourceTree = "<group>"; };
+		607B27771B7BC1A200FE657D /* Gram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gram.m; sourceTree = "<group>"; };
+		607B27791B7BC72400FE657D /* ARGramTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGramTableViewCell.h; sourceTree = "<group>"; };
+		607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGramTableViewCell.m; sourceTree = "<group>"; };
 		60B137061B7BBDE70081A522 /* Artsygram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artsygram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B1370A1B7BBDE70081A522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B1370B1B7BBDE70081A522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60B1370D1B7BBDE70081A522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60B1370E1B7BBDE70081A522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		60B137101B7BBDE70081A522 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		60B137111B7BBDE70081A522 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		60B137141B7BBDE70081A522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60B137161B7BBDE70081A522 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60B137191B7BBDE70081A522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		60B1371F1B7BBDE70081A522 /* ArtsygramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtsygramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B137241B7BBDE70081A522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B137251B7BBDE70081A522 /* ArtsygramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtsygramTests.m; sourceTree = "<group>"; };
+		60FD88B91B7BF542001DA78F /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		B3126C21E9C525DBEC670A56 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7F1025D2CB449B1C841617 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063380B00A695D540DC8B3A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7F1025D2CB449B1C841617 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60B136FD1B7BBDE70081A522 = {
 			isa = PBXGroup;
 			children = (
 				60B137081B7BBDE70081A522 /* Artsygram */,
 				60B137221B7BBDE70081A522 /* ArtsygramTests */,
 				60B137071B7BBDE70081A522 /* Products */,
+				D781666930B0C8C9386B029C /* Pods */,
+				063380B00A695D540DC8B3A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +109,18 @@
 			children = (
 				60B1370D1B7BBDE70081A522 /* AppDelegate.h */,
 				60B1370E1B7BBDE70081A522 /* AppDelegate.m */,
-				60B137101B7BBDE70081A522 /* ViewController.h */,
-				60B137111B7BBDE70081A522 /* ViewController.m */,
 				60B137131B7BBDE70081A522 /* Main.storyboard */,
 				60B137161B7BBDE70081A522 /* Images.xcassets */,
 				60B137181B7BBDE70081A522 /* LaunchScreen.xib */,
 				60B137091B7BBDE70081A522 /* Supporting Files */,
+				607B27701B7BC01000FE657D /* ARInstagramFeedViewController.h */,
+				607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */,
+				607B27731B7BC04500FE657D /* APINetworkModel.h */,
+				607B27741B7BC04500FE657D /* APINetworkModel.m */,
+				607B27761B7BC1A200FE657D /* Gram.h */,
+				607B27771B7BC1A200FE657D /* Gram.m */,
+				607B27791B7BC72400FE657D /* ARGramTableViewCell.h */,
+				607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */,
 			);
 			path = Artsygram;
 			sourceTree = "<group>";
@@ -96,6 +128,7 @@
 		60B137091B7BBDE70081A522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60FD88B91B7BF542001DA78F /* Graph.png */,
 				60B1370A1B7BBDE70081A522 /* Info.plist */,
 				60B1370B1B7BBDE70081A522 /* main.m */,
 			);
@@ -119,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D781666930B0C8C9386B029C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3126C21E9C525DBEC670A56 /* Pods.debug.xcconfig */,
+				008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B137291B7BBDE70081A522 /* Build configuration list for PBXNativeTarget "Artsygram" */;
 			buildPhases = (
+				36E158B105C32BC907D3F0BE /* Check Pods Manifest.lock */,
 				60B137021B7BBDE70081A522 /* Sources */,
 				60B137031B7BBDE70081A522 /* Frameworks */,
 				60B137041B7BBDE70081A522 /* Resources */,
+				59DD5C3043E15573C9982642 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +245,7 @@
 			files = (
 				60B137151B7BBDE70081A522 /* Main.storyboard in Resources */,
 				60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */,
+				60FD88BA1B7BF542001DA78F /* Graph.png in Resources */,
 				60B137171B7BBDE70081A522 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,13 +259,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36E158B105C32BC907D3F0BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59DD5C3043E15573C9982642 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60B137021B7BBDE70081A522 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60B137121B7BBDE70081A522 /* ViewController.m in Sources */,
+				607B27781B7BC1A200FE657D /* Gram.m in Sources */,
 				60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */,
+				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,
+				607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */,
+				607B27721B7BC01000FE657D /* ARInstagramFeedViewController.m in Sources */,
 				60B1370C1B7BBDE70081A522 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +426,7 @@
 		};
 		60B1372A1B7BBDE70081A522 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3126C21E9C525DBEC670A56 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Artsygram/Info.plist;
@@ -355,6 +437,7 @@
 		};
 		60B1372B1B7BBDE70081A522 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Artsygram/Info.plist;
@@ -416,6 +499,7 @@
 				60B1372B1B7BBDE70081A522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60B1372C1B7BBDE70081A522 /* Build configuration list for PBXNativeTarget "ArtsygramTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +508,7 @@
 				60B1372E1B7BBDE70081A522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
