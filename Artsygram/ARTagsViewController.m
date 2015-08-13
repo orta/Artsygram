@@ -9,6 +9,8 @@
 
 @interface ARTagsViewController()
 @property (strong) Tag *selectedTag;
+@property (strong) NSArray *tags;
+
 @property (strong) APINetworkModel *network;
 @property (strong) APLArrayDataSource *dataSource;
 @end
@@ -39,7 +41,7 @@
     self.tableView.dataSource = _dataSource;
     
     [_network getLatestTags:^(NSArray *tags) {
-
+        _tags = tags;
         for (UIButton *tagButton in _trendingTags ) {
             NSInteger index = [_trendingTags indexOfObject:tagButton];
             [tagButton setTitle:[NSString stringWithFormat:@"#%@",[tags[index] name]] forState:UIControlStateNormal];
@@ -63,7 +65,7 @@
 
 - (void)buttonPressed:(UIButton *)button
 {    
-    _selectedTag = [self.dataSource.items objectAtIndex:button.tag];
+    _selectedTag = [self.tags objectAtIndex:button.tag];
     [self performSegueWithIdentifier:@"show_tag" sender:self];
 }
 
