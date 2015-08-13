@@ -23,6 +23,20 @@
 		60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */; };
 		60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88C71B7C01AF001DA78F /* artist_split.png */; };
 		60FD88CA1B7C01D4001DA78F /* tag_split.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88C91B7C01D4001DA78F /* tag_split.png */; };
+		60FD88D51B7C19B3001DA78F /* BackArrow-Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88CB1B7C19B3001DA78F /* BackArrow-Normal.png */; };
+		60FD88D61B7C19B3001DA78F /* BackArrow-Normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88CC1B7C19B3001DA78F /* BackArrow-Normal@2x.png */; };
+		60FD88D71B7C19B3001DA78F /* BackArrow-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88CD1B7C19B3001DA78F /* BackArrow-Selected.png */; };
+		60FD88D81B7C19B3001DA78F /* BackArrow-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88CE1B7C19B3001DA78F /* BackArrow-Selected@2x.png */; };
+		60FD88D91B7C19B3001DA78F /* Menu-Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88CF1B7C19B3001DA78F /* Menu-Normal.png */; };
+		60FD88DA1B7C19B3001DA78F /* Menu-Normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88D01B7C19B3001DA78F /* Menu-Normal@2x.png */; };
+		60FD88DB1B7C19B3001DA78F /* Menu-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88D11B7C19B3001DA78F /* Menu-Selected.png */; };
+		60FD88DC1B7C19B3001DA78F /* Menu-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88D21B7C19B3001DA78F /* Menu-Selected@2x.png */; };
+		60FD88DD1B7C19B3001DA78F /* NavButtonBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88D31B7C19B3001DA78F /* NavButtonBG.png */; };
+		60FD88DE1B7C19B3001DA78F /* NavButtonBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88D41B7C19B3001DA78F /* NavButtonBG@2x.png */; };
+		60FD88E11B7C1BD5001DA78F /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD88E01B7C1BD5001DA78F /* AppViewController.m */; };
+		60FD88E51B7C23AF001DA78F /* instagram_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88E21B7C23AF001DA78F /* instagram_logo.png */; };
+		60FD88E61B7C23AF001DA78F /* instagram_comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88E31B7C23AF001DA78F /* instagram_comments.png */; };
+		60FD88E71B7C23AF001DA78F /* instagram_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88E41B7C23AF001DA78F /* instagram_heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +77,21 @@
 		60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagsViewController.m; sourceTree = "<group>"; };
 		60FD88C71B7C01AF001DA78F /* artist_split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_split.png; sourceTree = "<group>"; };
 		60FD88C91B7C01D4001DA78F /* tag_split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag_split.png; sourceTree = "<group>"; };
+		60FD88CB1B7C19B3001DA78F /* BackArrow-Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackArrow-Normal.png"; sourceTree = "<group>"; };
+		60FD88CC1B7C19B3001DA78F /* BackArrow-Normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackArrow-Normal@2x.png"; sourceTree = "<group>"; };
+		60FD88CD1B7C19B3001DA78F /* BackArrow-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackArrow-Selected.png"; sourceTree = "<group>"; };
+		60FD88CE1B7C19B3001DA78F /* BackArrow-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackArrow-Selected@2x.png"; sourceTree = "<group>"; };
+		60FD88CF1B7C19B3001DA78F /* Menu-Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Normal.png"; sourceTree = "<group>"; };
+		60FD88D01B7C19B3001DA78F /* Menu-Normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Normal@2x.png"; sourceTree = "<group>"; };
+		60FD88D11B7C19B3001DA78F /* Menu-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Selected.png"; sourceTree = "<group>"; };
+		60FD88D21B7C19B3001DA78F /* Menu-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Selected@2x.png"; sourceTree = "<group>"; };
+		60FD88D31B7C19B3001DA78F /* NavButtonBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavButtonBG.png; sourceTree = "<group>"; };
+		60FD88D41B7C19B3001DA78F /* NavButtonBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavButtonBG@2x.png"; sourceTree = "<group>"; };
+		60FD88DF1B7C1BD5001DA78F /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
+		60FD88E01B7C1BD5001DA78F /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		60FD88E21B7C23AF001DA78F /* instagram_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram_logo.png; sourceTree = "<group>"; };
+		60FD88E31B7C23AF001DA78F /* instagram_comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram_comments.png; sourceTree = "<group>"; };
+		60FD88E41B7C23AF001DA78F /* instagram_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram_heart.png; sourceTree = "<group>"; };
 		B3126C21E9C525DBEC670A56 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7F1025D2CB449B1C841617 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +161,8 @@
 				607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */,
 				60FD88C21B7BFB3A001DA78F /* ARTagsViewController.h */,
 				60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */,
+				60FD88DF1B7C1BD5001DA78F /* AppViewController.h */,
+				60FD88E01B7C1BD5001DA78F /* AppViewController.m */,
 			);
 			path = Artsygram;
 			sourceTree = "<group>";
@@ -139,6 +170,19 @@
 		60B137091B7BBDE70081A522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60FD88E21B7C23AF001DA78F /* instagram_logo.png */,
+				60FD88E31B7C23AF001DA78F /* instagram_comments.png */,
+				60FD88E41B7C23AF001DA78F /* instagram_heart.png */,
+				60FD88CB1B7C19B3001DA78F /* BackArrow-Normal.png */,
+				60FD88CC1B7C19B3001DA78F /* BackArrow-Normal@2x.png */,
+				60FD88CD1B7C19B3001DA78F /* BackArrow-Selected.png */,
+				60FD88CE1B7C19B3001DA78F /* BackArrow-Selected@2x.png */,
+				60FD88CF1B7C19B3001DA78F /* Menu-Normal.png */,
+				60FD88D01B7C19B3001DA78F /* Menu-Normal@2x.png */,
+				60FD88D11B7C19B3001DA78F /* Menu-Selected.png */,
+				60FD88D21B7C19B3001DA78F /* Menu-Selected@2x.png */,
+				60FD88D31B7C19B3001DA78F /* NavButtonBG.png */,
+				60FD88D41B7C19B3001DA78F /* NavButtonBG@2x.png */,
 				60FD88C91B7C01D4001DA78F /* tag_split.png */,
 				60FD88C71B7C01AF001DA78F /* artist_split.png */,
 				60FD88B91B7BF542001DA78F /* Graph.png */,
@@ -267,12 +311,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FD88E71B7C23AF001DA78F /* instagram_heart.png in Resources */,
 				60B137151B7BBDE70081A522 /* Main.storyboard in Resources */,
+				60FD88D71B7C19B3001DA78F /* BackArrow-Selected.png in Resources */,
 				60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */,
+				60FD88E61B7C23AF001DA78F /* instagram_comments.png in Resources */,
+				60FD88D51B7C19B3001DA78F /* BackArrow-Normal.png in Resources */,
 				60FD88CA1B7C01D4001DA78F /* tag_split.png in Resources */,
+				60FD88DB1B7C19B3001DA78F /* Menu-Selected.png in Resources */,
+				60FD88DD1B7C19B3001DA78F /* NavButtonBG.png in Resources */,
 				60FD88BA1B7BF542001DA78F /* Graph.png in Resources */,
+				60FD88DA1B7C19B3001DA78F /* Menu-Normal@2x.png in Resources */,
+				60FD88DE1B7C19B3001DA78F /* NavButtonBG@2x.png in Resources */,
 				60B137171B7BBDE70081A522 /* Images.xcassets in Resources */,
+				60FD88D91B7C19B3001DA78F /* Menu-Normal.png in Resources */,
+				60FD88D61B7C19B3001DA78F /* BackArrow-Normal@2x.png in Resources */,
+				60FD88D81B7C19B3001DA78F /* BackArrow-Selected@2x.png in Resources */,
+				60FD88DC1B7C19B3001DA78F /* Menu-Selected@2x.png in Resources */,
 				60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */,
+				60FD88E51B7C23AF001DA78F /* instagram_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607B27781B7BC1A200FE657D /* Gram.m in Sources */,
+				60FD88E11B7C1BD5001DA78F /* AppViewController.m in Sources */,
 				60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */,
 				60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */,
 				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,

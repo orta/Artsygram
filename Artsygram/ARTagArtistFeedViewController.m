@@ -17,6 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 440;
+    
     _network = [[APINetworkModel alloc] init];
     self.view.backgroundColor = [UIColor blackColor];
     
