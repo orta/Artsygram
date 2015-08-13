@@ -57,6 +57,11 @@
                 <constraint firstItem="x0d-Oo-dIR" firstAttribute="top" secondItem="HA6-Jq-K8d" secondAttribute="bottom" constant="8" id="lBz-rW-GXi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1c3-Du-S3V"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="gramAuthorPreviewImage" destination="x0d-Oo-dIR" id="Fma-Ha-QUu"/>
                 <outlet property="gramPreviewImage" destination="HA6-Jq-K8d" id="7px-Hb-ZeN"/>

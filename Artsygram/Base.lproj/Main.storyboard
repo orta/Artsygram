@@ -169,7 +169,6 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Item" id="yTz-f0-HS0"/>
                     <navigationItem key="navigationItem" id="tCu-8t-N4T"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="artistBioLabel" destination="TCi-5Y-F5r" id="nAT-qr-1G0"/>
                         <outlet property="artistFollowerCountLabel" destination="OiM-JY-EqO" id="4qd-Wf-ihi"/>
@@ -220,6 +219,10 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olJ-uW-Ahr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="19"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -236,6 +239,7 @@
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="mA4-4f-pmu" secondAttribute="bottom" constant="-20" id="wVc-ve-tfI"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="backButton" destination="e3q-Nb-VGY" id="a2P-E3-OZu"/>
