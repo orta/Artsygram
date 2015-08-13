@@ -49,8 +49,8 @@
     }];
 }
 
-- (void)buttonPressed:(UIButton *)button {
-    
+- (void)buttonPressed:(UIButton *)button
+{    
     _selectedTag = [self.dataSource.items objectAtIndex:button.tag];
     [self performSegueWithIdentifier:@"show_tag" sender:self];
 }
