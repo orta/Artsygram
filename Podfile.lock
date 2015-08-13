@@ -20,7 +20,11 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFWebViewController (1.1.1):
+    - ARChromeActivity (~> 1.0.4)
+    - TUSafariActivity (~> 1.0.4)
   - APLArrayDataSource (0.0.4)
+  - ARChromeActivity (1.0.4)
   - Artsy+UIColors (1.0.0):
     - EDColor (~> 0.4)
   - Artsy+UIFonts (1.0.0)
@@ -28,10 +32,12 @@ PODS:
     - Artsy+UIColors
   - EDColor (0.4.0)
   - ObjectiveSugar (1.1.1)
+  - TUSafariActivity (1.0.4)
   - UIView+BooleanAnimations (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - AFWebViewController (~> 1.0)
   - APLArrayDataSource
   - Artsy+UIColors
   - Artsy+UIFonts (= 1.0.0)
@@ -50,12 +56,15 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFWebViewController: b3be0fdf16fa14aa93bad5eb29259eb10ae18706
   APLArrayDataSource: f56319e44f326573bddfb0319a012ebb82315eac
+  ARChromeActivity: 9064d94803338d3377f3e1013a8e8f4821d7daf1
   Artsy+UIColors: 7a4c987885a8d8da3e22672a3232761f929dd2b6
   Artsy+UIFonts: d447d4efaefbe651f6275b0535444814bbdb4e2d
   Artsy+UILabels: a7c713069e3d10144a3dc8e377bef8b2253cd766
   EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
   ObjectiveSugar: 0729eb74a757ea48b109a8902178c9b89aa58a9f
+  TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546
   UIView+BooleanAnimations: a760be9a066036e55f298b7b7350a6cb14cfcd97
 
 COCOAPODS: 0.38.2

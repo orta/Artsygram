@@ -2,7 +2,7 @@
 
 @interface Gram : NSObject
 
-@property (copy) NSString *instagramID;
+@property (copy) NSString *instagramAddress;
 @property (strong) NSString *title;
 @property (copy) NSString *instagramImageAddress;
 @property (copy) NSString *instagramAvatarAddress;

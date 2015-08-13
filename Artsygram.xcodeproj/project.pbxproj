@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
-		607B27721B7BC01000FE657D /* ARInstagramFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */; };
+		607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */; };
 		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
 		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
 		607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */; };
@@ -19,6 +19,10 @@
 		60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B137181B7BBDE70081A522 /* LaunchScreen.xib */; };
 		60B137261B7BBDE70081A522 /* ArtsygramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B137251B7BBDE70081A522 /* ArtsygramTests.m */; };
 		60FD88BA1B7BF542001DA78F /* Graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88B91B7BF542001DA78F /* Graph.png */; };
+		60FD88C01B7BFA7B001DA78F /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD88BF1B7BFA7B001DA78F /* Tag.m */; };
+		60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */; };
+		60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88C71B7C01AF001DA78F /* artist_split.png */; };
+		60FD88CA1B7C01D4001DA78F /* tag_split.png in Resources */ = {isa = PBXBuildFile; fileRef = 60FD88C91B7C01D4001DA78F /* tag_split.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		607B27701B7BC01000FE657D /* ARInstagramFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARInstagramFeedViewController.h; sourceTree = "<group>"; };
-		607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARInstagramFeedViewController.m; sourceTree = "<group>"; };
+		607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagArtistFeedViewController.h; sourceTree = "<group>"; };
+		607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagArtistFeedViewController.m; sourceTree = "<group>"; };
 		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
 		607B27741B7BC04500FE657D /* APINetworkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APINetworkModel.m; sourceTree = "<group>"; };
 		607B27761B7BC1A200FE657D /* Gram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gram.h; sourceTree = "<group>"; };
@@ -53,6 +57,12 @@
 		60B137241B7BBDE70081A522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B137251B7BBDE70081A522 /* ArtsygramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtsygramTests.m; sourceTree = "<group>"; };
 		60FD88B91B7BF542001DA78F /* Graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graph.png; sourceTree = "<group>"; };
+		60FD88BE1B7BFA7B001DA78F /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		60FD88BF1B7BFA7B001DA78F /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		60FD88C21B7BFB3A001DA78F /* ARTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagsViewController.h; sourceTree = "<group>"; };
+		60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagsViewController.m; sourceTree = "<group>"; };
+		60FD88C71B7C01AF001DA78F /* artist_split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_split.png; sourceTree = "<group>"; };
+		60FD88C91B7C01D4001DA78F /* tag_split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag_split.png; sourceTree = "<group>"; };
 		B3126C21E9C525DBEC670A56 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7F1025D2CB449B1C841617 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,20 +117,21 @@
 		60B137081B7BBDE70081A522 /* Artsygram */ = {
 			isa = PBXGroup;
 			children = (
+				60FD88C11B7BFAB6001DA78F /* models */,
 				60B1370D1B7BBDE70081A522 /* AppDelegate.h */,
 				60B1370E1B7BBDE70081A522 /* AppDelegate.m */,
 				60B137131B7BBDE70081A522 /* Main.storyboard */,
 				60B137161B7BBDE70081A522 /* Images.xcassets */,
 				60B137181B7BBDE70081A522 /* LaunchScreen.xib */,
 				60B137091B7BBDE70081A522 /* Supporting Files */,
-				607B27701B7BC01000FE657D /* ARInstagramFeedViewController.h */,
-				607B27711B7BC01000FE657D /* ARInstagramFeedViewController.m */,
+				607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */,
+				607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */,
 				607B27731B7BC04500FE657D /* APINetworkModel.h */,
 				607B27741B7BC04500FE657D /* APINetworkModel.m */,
-				607B27761B7BC1A200FE657D /* Gram.h */,
-				607B27771B7BC1A200FE657D /* Gram.m */,
 				607B27791B7BC72400FE657D /* ARGramTableViewCell.h */,
 				607B277A1B7BC72400FE657D /* ARGramTableViewCell.m */,
+				60FD88C21B7BFB3A001DA78F /* ARTagsViewController.h */,
+				60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */,
 			);
 			path = Artsygram;
 			sourceTree = "<group>";
@@ -128,6 +139,8 @@
 		60B137091B7BBDE70081A522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60FD88C91B7C01D4001DA78F /* tag_split.png */,
+				60FD88C71B7C01AF001DA78F /* artist_split.png */,
 				60FD88B91B7BF542001DA78F /* Graph.png */,
 				60B1370A1B7BBDE70081A522 /* Info.plist */,
 				60B1370B1B7BBDE70081A522 /* main.m */,
@@ -150,6 +163,17 @@
 				60B137241B7BBDE70081A522 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FD88C11B7BFAB6001DA78F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				607B27761B7BC1A200FE657D /* Gram.h */,
+				607B27771B7BC1A200FE657D /* Gram.m */,
+				60FD88BE1B7BFA7B001DA78F /* Tag.h */,
+				60FD88BF1B7BFA7B001DA78F /* Tag.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 		D781666930B0C8C9386B029C /* Pods */ = {
@@ -245,8 +269,10 @@
 			files = (
 				60B137151B7BBDE70081A522 /* Main.storyboard in Resources */,
 				60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */,
+				60FD88CA1B7C01D4001DA78F /* tag_split.png in Resources */,
 				60FD88BA1B7BF542001DA78F /* Graph.png in Resources */,
 				60B137171B7BBDE70081A522 /* Images.xcassets in Resources */,
+				60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +325,11 @@
 			files = (
 				607B27781B7BC1A200FE657D /* Gram.m in Sources */,
 				60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */,
+				60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */,
 				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,
+				60FD88C01B7BFA7B001DA78F /* Tag.m in Sources */,
 				607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */,
-				607B27721B7BC01000FE657D /* ARInstagramFeedViewController.m in Sources */,
+				607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */,
 				60B1370C1B7BBDE70081A522 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,3 +19,4 @@ end
 # Nicities
 pod 'ObjectiveSugar', :git => 'https://github.com/supermarin/ObjectiveSugar'
 pod 'APLArrayDataSource'
+pod 'AFWebViewController', '~> 1.0'
