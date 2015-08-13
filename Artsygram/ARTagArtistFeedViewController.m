@@ -7,10 +7,12 @@
 #import "Tag.h"
 #import <AFWebViewController/AFWebViewController.h>
 #import "ARScrollNavigationChief.h"
+#import "AppViewController.h"
 
 @interface ARTagArtistFeedViewController ()
 @property (strong) APLArrayDataSource *dataSource;
 @property (copy) NSString *selectedInstagramID;
+@property (weak, nonatomic) IBOutlet UILabel *artistBioLabel;
 @end
 
 @implementation ARTagArtistFeedViewController
@@ -18,7 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    NSString *searchTitle = [NSString stringWithFormat:@"#%@", self.tag.name];
+    [AppViewController sharedInstance].searchQueryLabel.text = searchTitle;
+
     self.tableView.rowHeight = 400;
     [self.tableView registerNib:[UINib nibWithNibName:@"InstagramCell" bundle:nil] forCellReuseIdentifier:@"gram"];
 
@@ -49,6 +54,13 @@
     [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(id artist) {
         self.artistNameLabel.text = artist[@"name"];
         self.artistLocationAgeLabel.text = [NSString stringWithFormat:@"%@, born %@", artist[@"nationality"], artist[@"birthday"]];
+
+        int followers = arc4random_uniform(9999);
+        self.artistFollowerCountLabel.text = [NSString stringWithFormat:@"%@ followers", @(followers)];
+
+        NSString *bio = [NSString stringWithFormat:@"Lorem ipsum dolor sit %@, consectetur adipiscing %@. Donec a %@ lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. ", artist[@"name"], artist[@"nationality"], artist[@"hometown"]];
+        self.artistBioLabel.text = bio;
+
 
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 

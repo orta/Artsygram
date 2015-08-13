@@ -171,6 +171,7 @@
                     <navigationItem key="navigationItem" id="tCu-8t-N4T"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="artistBioLabel" destination="TCi-5Y-F5r" id="nAT-qr-1G0"/>
                         <outlet property="artistFollowerCountLabel" destination="OiM-JY-EqO" id="4qd-Wf-ihi"/>
                         <outlet property="artistLocationAgeLabel" destination="U7y-49-nbZ" id="n9s-pF-FU5"/>
                         <outlet property="artistNameLabel" destination="6pn-YC-LKQ" id="g9A-eb-vTr"/>
@@ -210,16 +211,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-n3-6ZP">
                                 <rect key="frame" x="68" y="28" width="271" height="40"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="#" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3x-v5-fuF">
+                                <rect key="frame" x="93" y="37" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DR4-yA-0MW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="leading" secondItem="Yvb-5d-qBa" secondAttribute="leadingMargin" constant="-16" id="5qP-Vs-GtK"/>
                             <constraint firstItem="Af1-Sv-0g2" firstAttribute="top" secondItem="xQ5-96-SYI" secondAttribute="bottom" id="AHt-Vg-GFA"/>
+                            <constraint firstItem="d3x-v5-fuF" firstAttribute="trailing" secondItem="6p5-n3-6ZP" secondAttribute="trailing" constant="-25" id="G2o-si-bAn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xQ5-96-SYI" secondAttribute="trailing" constant="-16" id="IMi-ku-3d5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6p5-n3-6ZP" secondAttribute="trailing" constant="20" id="Jb7-gl-BD2"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="leading" secondItem="6p5-n3-6ZP" secondAttribute="leading" constant="-68" id="WTi-72-Vr7"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="mA4-4f-pmu" secondAttribute="bottom" constant="-20" id="X9B-uu-wJG"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="6p5-n3-6ZP" secondAttribute="bottom" constant="-68" id="ibF-hR-8M4"/>
+                            <constraint firstItem="d3x-v5-fuF" firstAttribute="leading" secondItem="6p5-n3-6ZP" secondAttribute="leading" constant="25" id="rUs-uI-ViX"/>
+                            <constraint firstItem="d3x-v5-fuF" firstAttribute="leading" secondItem="6p5-n3-6ZP" secondAttribute="trailing" constant="-246" id="vMJ-6y-6JP"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="mA4-4f-pmu" secondAttribute="bottom" constant="-20" id="wVc-ve-tfI"/>
                         </constraints>
                     </view>
@@ -228,6 +241,7 @@
                         <outlet property="backButton" destination="e3q-Nb-VGY" id="a2P-E3-OZu"/>
                         <outlet property="leftSearchConstraint" destination="WTi-72-Vr7" id="9ls-SW-qtN"/>
                         <outlet property="searchBar" destination="6p5-n3-6ZP" id="B91-Hi-UcE"/>
+                        <outlet property="searchQueryLabel" destination="d3x-v5-fuF" id="B4O-Pq-Ecd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYY-27-AL3" userLabel="First Responder" sceneMemberID="firstResponder"/>

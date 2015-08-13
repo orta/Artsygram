@@ -19,7 +19,6 @@ static void *ARNavigationControllerScrollingChiefContext = &ARNavigationControll
     sharedInstance = self;
 
     [ARScrollNavigationChief.chief addObserver:self forKeyPath:@"allowsMenuButtons" options:NSKeyValueObservingOptionNew context:ARNavigationControllerScrollingChiefContext];
-
 }
 
 static AppViewController *sharedInstance;
@@ -34,6 +33,7 @@ static AppViewController *sharedInstance;
     [UIView animateIf:animates duration:0.15 :^{
         self.backButton.alpha = show;
         self.searchBar.alpha = show;
+        self.searchQueryLabel.alpha = show;
     }];
 }
 
@@ -43,6 +43,7 @@ static AppViewController *sharedInstance;
         CGFloat x = -40 - (show * 28);
         self.leftSearchConstraint.constant = x;
         self.backButton.alpha = show;
+        self.searchQueryLabel.alpha = show;
         [self.view layoutSubviews];
     }];
 }
