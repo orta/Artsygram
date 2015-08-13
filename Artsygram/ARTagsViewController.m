@@ -31,9 +31,23 @@
         _dataSource.items = tags;
         [self.tableView reloadData];
         
+        int index = 0; // hacky
+        for( UIButton* tagButton in _trendingTags ) {
+            [tagButton setTitle:[NSString stringWithFormat:@"#%@",[tags[index] name]] forState:UIControlStateNormal];
+            [tagButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
+            tagButton.tag = index;
+            index++;
+        }
+        
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         NSLog(@"failed");
     }];
+}
+
+- (void)buttonPressed:(UIButton *)button {
+    
+    _selectedTag = [self.dataSource.items objectAtIndex:button.tag];
+    [self performSegueWithIdentifier:@"show_tag" sender:self];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,6 +77,8 @@
 {
     [ARScrollNavigationChief.chief scrollViewDidScroll:scrollView];
 }
+
+
 
 
 @end
