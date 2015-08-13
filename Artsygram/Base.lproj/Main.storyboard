@@ -228,6 +228,11 @@
                     <tabBarItem key="tabBarItem" title="Item" id="yTz-f0-HS0"/>
                     <navigationItem key="navigationItem" id="tCu-8t-N4T"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="artistFollowerCountLabel" destination="OiM-JY-EqO" id="4qd-Wf-ihi"/>
+                        <outlet property="artistLocationAgeLabel" destination="U7y-49-nbZ" id="n9s-pF-FU5"/>
+                        <outlet property="artistNameLabel" destination="6pn-YC-LKQ" id="g9A-eb-vTr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iun-Uj-BCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

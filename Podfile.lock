@@ -35,6 +35,7 @@ PODS:
     - Artsy+UIColors
   - EDColor (0.4.0)
   - ISO8601DateFormatter (0.7)
+  - Keys (1.0.0)
   - NSURL+QueryDictionary (1.1.0)
   - ObjectiveSugar (1.1.1)
   - TUSafariActivity (1.0.4)
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - Artsy+UIColors
   - Artsy+UIFonts (= 1.0.0)
   - Artsy+UILabels
+  - Keys (from `Pods/CocoaPodsKeys`)
   - ObjectiveSugar (from `https://github.com/supermarin/ObjectiveSugar`)
   - UIView+BooleanAnimations
 
@@ -56,12 +58,14 @@ EXTERNAL SOURCES:
   Artsy+Authentication:
     :branch: no_twitter
     :git: https://github.com/artsy/Artsy_Authentication
+  Keys:
+    :path: Pods/CocoaPodsKeys
   ObjectiveSugar:
     :git: https://github.com/supermarin/ObjectiveSugar
 
 CHECKOUT OPTIONS:
   Artsy+Authentication:
-    :commit: 05981b28c27ac82e5da19dea96b439cb26af0a68
+    :commit: 671a382e8a04572e3243f756d0f63d196522211f
     :git: https://github.com/artsy/Artsy_Authentication
   ObjectiveSugar:
     :commit: 14ac406bd0dbb7fd96c72924f9e7196608f456a4
@@ -78,6 +82,7 @@ SPEC CHECKSUMS:
   Artsy+UILabels: a7c713069e3d10144a3dc8e377bef8b2253cd766
   EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
   ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
   NSURL+QueryDictionary: dd0a5fec689a9b4780b6fa0e0225c01ca3ea653e
   ObjectiveSugar: 0729eb74a757ea48b109a8902178c9b89aa58a9f
   TUSafariActivity: afc55a00965377939107ce4fdc7f951f62454546

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
 		600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC18F1B7CCB2900FCCE3A /* Artist.m */; };
+		600CC1931B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */; };
 		607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */; };
 		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
 		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
@@ -54,6 +55,8 @@
 		008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		600CC18E1B7CCB2900FCCE3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		600CC18F1B7CCB2900FCCE3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsyV2AuthRouter.h; sourceTree = "<group>"; };
+		600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtsyV2AuthRouter.m; sourceTree = "<group>"; };
 		607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagArtistFeedViewController.h; sourceTree = "<group>"; };
 		607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagArtistFeedViewController.m; sourceTree = "<group>"; };
 		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				60FD88C31B7BFB3A001DA78F /* ARTagsViewController.m */,
 				60FD88DF1B7C1BD5001DA78F /* AppViewController.h */,
 				60FD88E01B7C1BD5001DA78F /* AppViewController.m */,
+				600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */,
+				600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */,
 			);
 			path = Artsygram;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */,
 				60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */,
 				600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */,
+				600CC1931B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m in Sources */,
 				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,
 				60FD88C01B7BFA7B001DA78F /* Tag.m in Sources */,
 				607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */,

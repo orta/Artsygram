@@ -45,9 +45,9 @@
         NSLog(@"failed");
     }];
 
-    [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(Artist *artist) {
-        
-
+    [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(id artist) {
+        self.artistNameLabel.text = artist[@"name"];
+        self.artistLocationAgeLabel = artist[@"hometown"];
 
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 

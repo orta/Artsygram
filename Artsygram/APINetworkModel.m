@@ -4,10 +4,13 @@
 #import <Artsy+Authentication/Artsy+Authentication.h>
 #import "Gram.h"
 #import "Tag.h"
+#import <Keys/ArtsyKeys.h>
+#import "ArtsyV2AuthRouter.h"
 
 @interface APINetworkModel ()
 @property (strong) ArtsyAuthentication *auth;
 @property (strong) ArtsyToken *token;
+@property (strong) AFHTTPRequestOperationManager *requestManager;
 
 @end
 
@@ -18,10 +21,21 @@
     self = [super init];
     if (!self) return nil;
 
-//    https://github.com/artsy/eigen/blob/master/Makefile#L41
-    _auth = [[ArtsyAuthentication alloc] initWithClientID:@"3a33d2085cbd1176153f99781bbce7c6" clientSecret:@"e750db60ac506978fc70"];
+    _requestManager = [AFHTTPRequestOperationManager manager];
+
+    ArtsyKeys *keys = [[ArtsyKeys alloc] init];
+    _auth = [[ArtsyAuthentication alloc] initWithClientID:keys.artsyAPI2ClientKey clientSecret:keys.artsyAPI2ClientSecret];
+
+    // We're using V2 API so need different auth routing
+    _auth.router = [[ArtsyV2AuthRouter alloc] initWithClientID:keys.artsyAPI2ClientKey clientSecret:keys.artsyAPI2ClientSecret];
+
     [_auth getWeekLongXAppTrialToken:^(ArtsyToken *token, NSError *error) {
+        if (error) {
+            NSLog(@"Error logging in %@", error);
+        }
         _token = token;
+
+        [_requestManager.requestSerializer setValue:token.token forHTTPHeaderField:@"X-Xapp-Token"];
     }];
 
     return self;
@@ -72,10 +86,8 @@
 
 - (void)getArtistDetailsForArtistURL:(NSString *)artistAddress :(void (^)(Artist *artist))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-
-    [manager GET:artistAddress parameters:@{ @"X-Xapp-Token": self.token.token } success:^(AFHTTPRequestOperation *operation, NSDictionary *json) {
-        
+    [self.requestManager GET:artistAddress parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *json) {
+        success(json);
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
