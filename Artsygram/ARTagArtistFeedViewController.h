@@ -1,6 +1,10 @@
 #import <UIKit/UIKit.h>
 
-@class Tag;
+@class Tag, APINetworkModel;
+
 @interface ARTagArtistFeedViewController : UITableViewController
-@property (strong) Tag *tag;
+
+@property (nonatomic, strong) Tag *tag;
+@property (nonatomic, strong) APINetworkModel *network;
+
 @end

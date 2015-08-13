@@ -8,7 +8,6 @@ inhibit_all_warnings!
 pod 'Artsy+UILabels'
 pod 'Artsy+UIColors'
 pod 'UIView+BooleanAnimations'
-pod 'AFNetworking'
 
 if %w(orta ash artsy laura eloy sarahscott).include?(ENV['USER']) || ENV['CI'] == 'true'
   pod 'Artsy+UIFonts', '1.0.0'
@@ -17,6 +16,9 @@ else
 end
 
 # Nicities
-pod 'ObjectiveSugar', :git => 'https://github.com/supermarin/ObjectiveSugar'
+pod 'ObjectiveSugar', git: 'https://github.com/supermarin/ObjectiveSugar'
 pod 'APLArrayDataSource'
 pod 'AFWebViewController', '~> 1.0'
+
+pod 'AFNetworking'
+pod "Artsy+Authentication", git: "https://github.com/artsy/Artsy_Authentication", branch: "no_twitter"

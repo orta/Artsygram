@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
+		600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC18F1B7CCB2900FCCE3A /* Artist.m */; };
 		607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */; };
 		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
 		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		600CC18E1B7CCB2900FCCE3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		600CC18F1B7CCB2900FCCE3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagArtistFeedViewController.h; sourceTree = "<group>"; };
 		607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagArtistFeedViewController.m; sourceTree = "<group>"; };
 		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				607B27771B7BC1A200FE657D /* Gram.m */,
 				60FD88BE1B7BFA7B001DA78F /* Tag.h */,
 				60FD88BF1B7BFA7B001DA78F /* Tag.m */,
+				600CC18E1B7CCB2900FCCE3A /* Artist.h */,
+				600CC18F1B7CCB2900FCCE3A /* Artist.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				60FD88E11B7C1BD5001DA78F /* AppViewController.m in Sources */,
 				60B1370F1B7BBDE70081A522 /* AppDelegate.m in Sources */,
 				60FD88C41B7BFB3A001DA78F /* ARTagsViewController.m in Sources */,
+				600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */,
 				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,
 				60FD88C01B7BFA7B001DA78F /* Tag.m in Sources */,
 				607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */,
@@ -466,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -503,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -516,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Artsygram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -527,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Artsygram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

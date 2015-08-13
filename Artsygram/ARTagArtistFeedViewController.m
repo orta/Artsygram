@@ -4,10 +4,10 @@
 #import <APLArrayDataSource/APLArrayDataSource.h>
 #import <AFNetworking/UIKit+AFNetworking.h>
 #import "Gram.h"
+#import "Tag.h"
 #import <AFWebViewController/AFWebViewController.h>
 
 @interface ARTagArtistFeedViewController ()
-@property (strong) APINetworkModel *network;
 @property (strong) APLArrayDataSource *dataSource;
 @property (copy) NSString *selectedInstagramID;
 @end
@@ -21,7 +21,6 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 440;
     
-    _network = [[APINetworkModel alloc] init];
     self.view.backgroundColor = [UIColor blackColor];
     
     _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"gram" configureCellBlock:^(ARGramTableViewCell *cell, Gram *gram) {
@@ -38,12 +37,20 @@
     }];
     self.tableView.dataSource = _dataSource;
     
-    [_network getGramsforTag:self.tag :^(NSArray *grams) {
+    [self.network getGramsforTag:self.tag :^(NSArray *grams) {
         _dataSource.items = grams;
         [self.tableView reloadData];
         
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         NSLog(@"failed");
+    }];
+
+    [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(Artist *artist) {
+        
+
+
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+
     }];
 }
 
@@ -54,6 +61,9 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 
+- (APINetworkModel *)network
+{
+    return _network ?: [[APINetworkModel alloc] init];
+}
 
-    
 @end

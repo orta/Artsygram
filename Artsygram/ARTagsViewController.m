@@ -45,6 +45,7 @@
     if ([segue.identifier isEqualToString:@"show_tag"]) {
         ARTagArtistFeedViewController *artistVC = segue.destinationViewController;
         artistVC.tag = self.selectedTag;
+        artistVC.network = self.network;
     }
 }
 
