@@ -38,10 +38,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-GQ-3eW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="239"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-Gf-ybl">
-                                            <rect key="frame" x="199" y="190" width="162" height="30"/>
+                                            <rect key="frame" x="199" y="183" width="162" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,7 +49,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAw-GQ-9Bh">
-                                            <rect key="frame" x="28" y="126" width="162" height="30"/>
+                                            <rect key="frame" x="28" y="119" width="162" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,7 +57,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpO-AQ-PZR">
-                                            <rect key="frame" x="28" y="158" width="162" height="30"/>
+                                            <rect key="frame" x="28" y="151" width="162" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,7 +65,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeu-sL-XDd">
-                                            <rect key="frame" x="198" y="126" width="162" height="30"/>
+                                            <rect key="frame" x="198" y="119" width="162" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,13 +73,13 @@
                                             </state>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOP TRENDING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C61-uh-ugt">
-                                            <rect key="frame" x="20" y="96" width="332" height="22"/>
+                                            <rect key="frame" x="20" y="89" width="332" height="22"/>
                                             <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zki-r8-PC3">
-                                            <rect key="frame" x="198" y="158" width="162" height="30"/>
+                                            <rect key="frame" x="198" y="151" width="162" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +87,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exl-g2-Pwq">
-                                            <rect key="frame" x="29" y="190" width="161" height="30"/>
+                                            <rect key="frame" x="29" y="183" width="161" height="30"/>
                                             <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
                                             <state key="normal" title="#trendingtag">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,10 +98,10 @@
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trendingtoggle.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Bp-c4-RFn">
-                                    <rect key="frame" x="16" y="392" width="340" height="44"/>
+                                    <rect key="frame" x="16" y="390" width="340" height="44"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="featuredigs.png" translatesAutoresizingMaskIntoConstraints="NO" id="U31-VF-FBE">
-                                    <rect key="frame" x="16" y="254" width="342" height="128"/>
+                                    <rect key="frame" x="8" y="251" width="367" height="128"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -374,7 +374,7 @@
         <image name="Graph.png" width="576" height="218"/>
         <image name="NavButtonBG.png" width="40" height="40"/>
         <image name="artist_split.png" width="578" height="39"/>
-        <image name="featuredigs.png" width="309" height="110"/>
+        <image name="featuredigs.png" width="645" height="194"/>
         <image name="search_bg.png" width="300" height="40"/>
         <image name="trendingtoggle.png" width="293" height="36"/>
     </resources>
