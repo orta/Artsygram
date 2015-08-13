@@ -56,7 +56,6 @@ static AppViewController *sharedInstance;
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-
     if (context == ARNavigationControllerScrollingChiefContext) {
         // All hail the chief
         ARScrollNavigationChief *chief = object;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewe-cE-QJL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewe-cE-QJL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,9 +17,10 @@
             <string>AGaramondPro-Regular</string>
             <string>AGaramondPro-Regular</string>
             <string>AGaramondPro-Regular</string>
-            <string>AGaramondPro-Regular</string>
         </mutableArray>
         <mutableArray key="ITC_Avant_Garde_Gothic__Demi.ttf">
+            <string>AvantGardeGothicITCW01Dm</string>
+            <string>AvantGardeGothicITCW01Dm</string>
             <string>AvantGardeGothicITCW01Dm</string>
             <string>AvantGardeGothicITCW01Dm</string>
             <string>AvantGardeGothicITCW01Dm</string>
@@ -200,8 +201,9 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-gx-FJs">
-                                    <rect key="frame" x="248" y="279" width="106" height="35"/>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-gx-FJs">
+                                    <rect key="frame" x="248" y="303" width="106" height="35"/>
+                                    <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="12"/>
                                     <state key="normal" title="FOLLOW">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -226,7 +228,7 @@
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name McName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pn-YC-LKQ">
                                     <rect key="frame" x="20" y="279" width="211" height="17"/>
-                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -240,6 +242,15 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biT-2G-cbe">
+                                    <rect key="frame" x="249" y="304" width="104" height="33"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="12"/>
+                                    <state key="normal" title="FOLLOW">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -259,7 +270,6 @@
                                 <constraint firstAttribute="trailing" secondItem="TCi-5Y-F5r" secondAttribute="trailing" constant="20" id="WDR-uj-CHL"/>
                                 <constraint firstItem="HO4-ZG-Vlg" firstAttribute="leading" secondItem="OiM-JY-EqO" secondAttribute="trailing" constant="-85" id="Zju-Oa-z0A"/>
                                 <constraint firstAttribute="centerX" secondItem="HO4-ZG-Vlg" secondAttribute="centerX" constant="-0.5" id="aQh-tx-fhP"/>
-                                <constraint firstItem="LHc-gx-FJs" firstAttribute="top" secondItem="Q2w-QH-ZHK" secondAttribute="bottom" constant="29" id="bhh-Yx-aNR"/>
                                 <constraint firstAttribute="trailing" secondItem="fNm-RN-vHZ" secondAttribute="trailing" constant="61" id="bxn-dE-ZqG"/>
                                 <constraint firstItem="HO4-ZG-Vlg" firstAttribute="top" secondItem="OiM-JY-EqO" secondAttribute="bottom" constant="19" id="cbj-qr-ybI"/>
                                 <constraint firstAttribute="trailing" secondItem="LHc-gx-FJs" secondAttribute="trailing" constant="21" id="iNo-qU-eqv"/>
