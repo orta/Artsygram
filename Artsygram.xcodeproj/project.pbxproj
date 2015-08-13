@@ -10,6 +10,7 @@
 		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
 		600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC18F1B7CCB2900FCCE3A /* Artist.m */; };
 		600CC1931B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */; };
+		600CC1951B7CE44E00FCCE3A /* InstagramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */; };
 		607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */; };
 		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
 		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
@@ -57,6 +58,7 @@
 		600CC18F1B7CCB2900FCCE3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsyV2AuthRouter.h; sourceTree = "<group>"; };
 		600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtsyV2AuthRouter.m; sourceTree = "<group>"; };
+		600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramCell.xib; sourceTree = "<group>"; };
 		607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagArtistFeedViewController.h; sourceTree = "<group>"; };
 		607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagArtistFeedViewController.m; sourceTree = "<group>"; };
 		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				60FD88E01B7C1BD5001DA78F /* AppViewController.m */,
 				600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */,
 				600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */,
+				600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */,
 			);
 			path = Artsygram;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				60FD88D91B7C19B3001DA78F /* Menu-Normal.png in Resources */,
 				60FD88D61B7C19B3001DA78F /* BackArrow-Normal@2x.png in Resources */,
 				60FD88D81B7C19B3001DA78F /* BackArrow-Selected@2x.png in Resources */,
+				600CC1951B7CE44E00FCCE3A /* InstagramCell.xib in Resources */,
 				60FD88DC1B7C19B3001DA78F /* Menu-Selected@2x.png in Resources */,
 				60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */,
 				60FD88E51B7C23AF001DA78F /* instagram_logo.png in Resources */,

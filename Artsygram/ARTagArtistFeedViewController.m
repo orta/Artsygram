@@ -18,9 +18,9 @@
 {
     [super viewDidLoad];
     
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 440;
-    
+    self.tableView.rowHeight = 400;
+    [self.tableView registerNib:[UINib nibWithNibName:@"InstagramCell" bundle:nil] forCellReuseIdentifier:@"gram"];
+
     self.view.backgroundColor = [UIColor blackColor];
     
     _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"gram" configureCellBlock:^(ARGramTableViewCell *cell, Gram *gram) {

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewe-cE-QJL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -152,71 +151,14 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="gram" rowHeight="400" id="PW8-ow-H8f" customClass="ARGramTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="400" id="PW8-ow-H8f" customClass="ARGramTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="400"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PW8-ow-H8f" id="wgx-Hx-2kd">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="399.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-0T-fpk" userLabel="Avatar Image">
-                                            <rect key="frame" x="10" y="325" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="4XN-Gw-GYv"/>
-                                                <constraint firstAttribute="width" constant="40" id="Awx-8r-6G3"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-3t-kqs">
-                                            <rect key="frame" x="301" y="329" width="64" height="29"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="64" id="3F1-uq-7QF"/>
-                                                <constraint firstAttribute="height" constant="29" id="ZUK-Ua-b0G"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="instagram_comments.png" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-fX-zXK">
-                                            <rect key="frame" x="62" y="336" width="15" height="18"/>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram_heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="3xp-Rz-W2J">
-                                            <rect key="frame" x="137" y="335" width="15" height="18"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkC-a2-zqa">
-                                            <rect key="frame" x="0.0" y="387" width="375" height="12"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="12" id="hNV-gH-Egc"/>
-                                            </constraints>
-                                        </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-BL-YpF" userLabel="Preview Image">
-                                            <rect key="frame" x="10" y="15" width="355" height="302"/>
-                                            <accessibility key="accessibilityConfiguration" label=""/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="oSA-BL-YpF" secondAttribute="height" multiplier="1:1" constant="53" id="0yB-uQ-6NH"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
                                     <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="cKW-3t-kqs" secondAttribute="bottom" constant="33" id="9F9-Do-CSo"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="oSA-BL-YpF" secondAttribute="trailing" constant="2" id="A2w-eo-FIQ"/>
-                                        <constraint firstItem="ckq-0T-fpk" firstAttribute="top" secondItem="oSA-BL-YpF" secondAttribute="bottom" constant="8" id="Mqu-x5-tkO"/>
-                                        <constraint firstItem="gMd-fX-zXK" firstAttribute="leading" secondItem="ckq-0T-fpk" secondAttribute="trailing" constant="12" id="Qcx-x3-hzC"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="KkC-a2-zqa" secondAttribute="bottom" constant="-7.5" id="RLC-zt-7Jc"/>
-                                        <constraint firstItem="oSA-BL-YpF" firstAttribute="top" secondItem="wgx-Hx-2kd" secondAttribute="topMargin" constant="7" id="Rix-bV-vHF"/>
-                                        <constraint firstItem="KkC-a2-zqa" firstAttribute="top" secondItem="ckq-0T-fpk" secondAttribute="bottom" constant="22" id="ZFE-rd-rfJ"/>
-                                        <constraint firstItem="ckq-0T-fpk" firstAttribute="leading" secondItem="oSA-BL-YpF" secondAttribute="leading" id="aN1-9K-Jzc"/>
-                                        <constraint firstItem="KkC-a2-zqa" firstAttribute="leading" secondItem="wgx-Hx-2kd" secondAttribute="leadingMargin" constant="-8" id="hOM-FF-8R5"/>
-                                        <constraint firstItem="ckq-0T-fpk" firstAttribute="top" secondItem="oSA-BL-YpF" secondAttribute="bottom" constant="8" symbolic="YES" id="hZK-5G-tTA"/>
-                                        <constraint firstItem="ckq-0T-fpk" firstAttribute="centerY" secondItem="gMd-fX-zXK" secondAttribute="centerY" id="kMT-i8-dMs"/>
-                                        <constraint firstItem="ckq-0T-fpk" firstAttribute="leading" secondItem="wgx-Hx-2kd" secondAttribute="leadingMargin" constant="2" id="moU-Nx-vof"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KkC-a2-zqa" secondAttribute="trailing" constant="-8" id="uoe-w8-wWG"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="cKW-3t-kqs" secondAttribute="trailing" constant="2" id="vsY-X8-Cuj"/>
-                                        <constraint firstItem="oSA-BL-YpF" firstAttribute="leading" secondItem="wgx-Hx-2kd" secondAttribute="leadingMargin" constant="2" id="yix-x6-XSQ"/>
-                                    </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="gramAuthorPreviewImage" destination="ckq-0T-fpk" id="vvD-tx-eIl"/>
-                                    <outlet property="gramPreviewImage" destination="oSA-BL-YpF" id="v6B-Bs-20k"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -308,9 +250,6 @@
         <image name="Graph.png" width="576" height="218"/>
         <image name="NavButtonBG.png" width="40" height="40"/>
         <image name="artist_split.png" width="578" height="39"/>
-        <image name="instagram_comments.png" width="31" height="25"/>
-        <image name="instagram_heart.png" width="28" height="26"/>
-        <image name="instagram_logo.png" width="160" height="48"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
