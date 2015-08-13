@@ -53,7 +53,7 @@
         NSLog(@"failed");
     }];
 
-    [self.network getFreshGrams:^(NSArray *grams) {
+    [self.network getFreshGrams:^(NSArray *grams, NSString *next) {
         _dataSource.items = grams;
         [self.tableView reloadData];
 

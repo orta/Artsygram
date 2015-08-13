@@ -12,6 +12,8 @@
 @property (strong) APLArrayDataSource *dataSource;
 @property (copy) NSString *selectedInstagramID;
 @property (weak, nonatomic) IBOutlet UILabel *artistBioLabel;
+@property (copy, nonatomic) NSString *nextAddress;
+@property (assign, nonatomic) BOOL loading;
 @end
 
 @implementation ARTagArtistFeedViewController
@@ -31,11 +33,17 @@
     
     _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"gram" configureCellBlock:^(ARGramTableViewCell *cell, Gram *gram) {
         cell.gram = gram;
+        
+        NSInteger index = [self.dataSource.items indexOfObject:gram];
+        if (index == _dataSource.items.count - 1) {
+            [self loadMore];
+        }
     }];
     self.tableView.dataSource = _dataSource;
     
-    [self.network getGramsforTag:self.tag :^(NSArray *grams) {
+    [self.network getGramsforTag:self.tag :^(NSArray *grams, NSString *next) {
         _dataSource.items = grams;
+        self.nextAddress = next;
         [self.tableView reloadData];
         
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
@@ -54,6 +62,24 @@
 
 
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+
+    }];
+}
+
+- (void)loadMore
+{
+    if (self.loading || !self.nextAddress) return;
+    self.loading = YES;
+    
+    [self.network getGramsforAddress:self.nextAddress :^(NSArray *grams, NSString *nextAddress) {
+        NSArray *items = [self.dataSource.items arrayByAddingObjectsFromArray:grams];
+        self.dataSource.items = items;
+        [self.tableView reloadData];
+        self.nextAddress = nextAddress;
+        self.loading = NO;
+        
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        self.loading = NO;
 
     }];
 }

@@ -12,6 +12,9 @@
 @property (strong) ArtsyToken *token;
 @property (strong) AFHTTPRequestOperationManager *requestManager;
 
+@property (strong) NSString *nextTagURL;
+@property (strong) NSString *nextFreshTagURL;
+
 @end
 
 @implementation APINetworkModel
@@ -42,19 +45,19 @@
 }
 
 
-- (void)getFreshGrams:(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
+- (void)getFreshGrams:(void (^)(NSArray *grams, NSString *nextAddress))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
     [self getGramsforAddress:@"https://gramophone-production.herokuapp.com/api/grams" :success failure:failure];
 }
 
 
-- (void)getGramsforTag:(Tag *)tag :(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
+- (void)getGramsforTag:(Tag *)tag :(void (^)(NSArray *grams, NSString *nextAddress))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
     NSString *address = [NSString stringWithFormat:@"https://gramophone-production.herokuapp.com/api/grams?tag=%@", tag.name];
     [self getGramsforAddress:address :success failure:failure];
 }
 
-- (void)getGramsforAddress:(NSString *)address :(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
+- (void)getGramsforAddress:(NSString *)address :(void (^)(NSArray *grams, NSString *nextAddress))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:address parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *json) {
@@ -68,7 +71,7 @@
             gram.commentCount = [dict[@"data"][@"comments"][@"count"] integerValue];
             gram.heartCount = [dict[@"data"][@"likes"][@"count"] integerValue];
             return gram;
-        }]);
+        }], json[@"_links"][@"next"][@"href"]);
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
