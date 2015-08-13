@@ -6,6 +6,7 @@
 #import "Gram.h"
 #import "Tag.h"
 #import <AFWebViewController/AFWebViewController.h>
+#import "ARScrollNavigationChief.h"
 
 @interface ARTagArtistFeedViewController ()
 @property (strong) APLArrayDataSource *dataSource;
@@ -47,7 +48,7 @@
 
     [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(id artist) {
         self.artistNameLabel.text = artist[@"name"];
-        self.artistLocationAgeLabel = artist[@"hometown"];
+        self.artistLocationAgeLabel.text = [NSString stringWithFormat:@"%@, born %@", artist[@"nationality"], artist[@"birthday"]];
 
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
 
@@ -64,6 +65,11 @@
 - (APINetworkModel *)network
 {
     return _network ?: [[APINetworkModel alloc] init];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [ARScrollNavigationChief.chief scrollViewDidScroll:scrollView];
 }
 
 @end

@@ -38,7 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKJ-9q-VIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="114"/>
+            <point key="canvasLocation" x="-647.5" y="113.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="1NN-Jd-uEo">
@@ -178,7 +178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iun-Uj-BCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-309.5" y="106.5"/>
+            <point key="canvasLocation" x="-171.5" y="113.5"/>
         </scene>
         <!--App View Controller-->
         <scene sceneID="geh-xJ-PHg">
@@ -207,19 +207,27 @@
                                     <action selector="tappedBackButton:" destination="ewe-cE-QJL" eventType="touchUpInside" id="bzs-3C-8pW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-n3-6ZP">
+                                <rect key="frame" x="68" y="28" width="271" height="40"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="leading" secondItem="Yvb-5d-qBa" secondAttribute="leadingMargin" constant="-16" id="5qP-Vs-GtK"/>
                             <constraint firstItem="Af1-Sv-0g2" firstAttribute="top" secondItem="xQ5-96-SYI" secondAttribute="bottom" id="AHt-Vg-GFA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xQ5-96-SYI" secondAttribute="trailing" constant="-16" id="IMi-ku-3d5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6p5-n3-6ZP" secondAttribute="trailing" constant="20" id="Jb7-gl-BD2"/>
+                            <constraint firstItem="xQ5-96-SYI" firstAttribute="leading" secondItem="6p5-n3-6ZP" secondAttribute="leading" constant="-68" id="WTi-72-Vr7"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="mA4-4f-pmu" secondAttribute="bottom" constant="-20" id="X9B-uu-wJG"/>
+                            <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="6p5-n3-6ZP" secondAttribute="bottom" constant="-68" id="ibF-hR-8M4"/>
                             <constraint firstItem="xQ5-96-SYI" firstAttribute="top" secondItem="mA4-4f-pmu" secondAttribute="bottom" constant="-20" id="wVc-ve-tfI"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="backButton" destination="e3q-Nb-VGY" id="tdg-S9-iO3"/>
+                        <outlet property="backButton" destination="e3q-Nb-VGY" id="a2P-E3-OZu"/>
+                        <outlet property="leftSearchConstraint" destination="WTi-72-Vr7" id="9ls-SW-qtN"/>
+                        <outlet property="searchBar" destination="6p5-n3-6ZP" id="B91-Hi-UcE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYY-27-AL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,7 +250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kue-iR-2fY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="122"/>
+            <point key="canvasLocation" x="-1112.5" y="113.5"/>
         </scene>
     </scenes>
     <resources>
@@ -250,6 +258,7 @@
         <image name="Graph.png" width="576" height="218"/>
         <image name="NavButtonBG.png" width="40" height="40"/>
         <image name="artist_split.png" width="578" height="39"/>
+        <image name="search_bg.png" width="300" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

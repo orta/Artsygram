@@ -1,8 +1,10 @@
 #import "ARTagsViewController.h"
+#import "AppViewController.h"
 #import "ARTagArtistFeedViewController.h"
 #import <APLArrayDataSource/APLArrayDataSource.h>
 #import "APINetworkModel.h"
 #import "Tag.h"
+#import "ARScrollNavigationChief.h"
 
 @interface ARTagsViewController()
 @property (strong) Tag *selectedTag;
@@ -40,13 +42,27 @@
     [self performSegueWithIdentifier:@"show_tag" sender:self];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[AppViewController sharedInstance] showBackButton:NO animated:animated];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    [[AppViewController sharedInstance] showBackButton:YES animated:YES];
+
     if ([segue.identifier isEqualToString:@"show_tag"]) {
         ARTagArtistFeedViewController *artistVC = segue.destinationViewController;
         artistVC.tag = self.selectedTag;
         artistVC.network = self.network;
     }
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [ARScrollNavigationChief.chief scrollViewDidScroll:scrollView];
+}
+
 
 @end

@@ -11,6 +11,8 @@
 		600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC18F1B7CCB2900FCCE3A /* Artist.m */; };
 		600CC1931B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */; };
 		600CC1951B7CE44E00FCCE3A /* InstagramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */; };
+		600CC1971B7CEF9900FCCE3A /* search_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 600CC1961B7CEF9900FCCE3A /* search_bg@2x.png */; };
+		600CC19A1B7CF53400FCCE3A /* ARScrollNavigationChief.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1991B7CF53400FCCE3A /* ARScrollNavigationChief.m */; };
 		607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */; };
 		607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27741B7BC04500FE657D /* APINetworkModel.m */; };
 		607B27781B7BC1A200FE657D /* Gram.m in Sources */ = {isa = PBXBuildFile; fileRef = 607B27771B7BC1A200FE657D /* Gram.m */; };
@@ -59,6 +61,9 @@
 		600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsyV2AuthRouter.h; sourceTree = "<group>"; };
 		600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtsyV2AuthRouter.m; sourceTree = "<group>"; };
 		600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramCell.xib; sourceTree = "<group>"; };
+		600CC1961B7CEF9900FCCE3A /* search_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_bg@2x.png"; sourceTree = "<group>"; };
+		600CC1981B7CF53400FCCE3A /* ARScrollNavigationChief.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARScrollNavigationChief.h; sourceTree = "<group>"; };
+		600CC1991B7CF53400FCCE3A /* ARScrollNavigationChief.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARScrollNavigationChief.m; sourceTree = "<group>"; };
 		607B27701B7BC01000FE657D /* ARTagArtistFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTagArtistFeedViewController.h; sourceTree = "<group>"; };
 		607B27711B7BC01000FE657D /* ARTagArtistFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTagArtistFeedViewController.m; sourceTree = "<group>"; };
 		607B27731B7BC04500FE657D /* APINetworkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APINetworkModel.h; sourceTree = "<group>"; };
@@ -194,6 +199,7 @@
 				60FD88D21B7C19B3001DA78F /* Menu-Selected@2x.png */,
 				60FD88D31B7C19B3001DA78F /* NavButtonBG.png */,
 				60FD88D41B7C19B3001DA78F /* NavButtonBG@2x.png */,
+				600CC1961B7CEF9900FCCE3A /* search_bg@2x.png */,
 				60FD88C91B7C01D4001DA78F /* tag_split.png */,
 				60FD88C71B7C01AF001DA78F /* artist_split.png */,
 				60FD88B91B7BF542001DA78F /* Graph.png */,
@@ -223,6 +229,8 @@
 		60FD88C11B7BFAB6001DA78F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				600CC1981B7CF53400FCCE3A /* ARScrollNavigationChief.h */,
+				600CC1991B7CF53400FCCE3A /* ARScrollNavigationChief.m */,
 				607B27761B7BC1A200FE657D /* Gram.h */,
 				607B27771B7BC1A200FE657D /* Gram.m */,
 				60FD88BE1B7BFA7B001DA78F /* Tag.h */,
@@ -335,6 +343,7 @@
 				60FD88DD1B7C19B3001DA78F /* NavButtonBG.png in Resources */,
 				60FD88BA1B7BF542001DA78F /* Graph.png in Resources */,
 				60FD88DA1B7C19B3001DA78F /* Menu-Normal@2x.png in Resources */,
+				600CC1971B7CEF9900FCCE3A /* search_bg@2x.png in Resources */,
 				60FD88DE1B7C19B3001DA78F /* NavButtonBG@2x.png in Resources */,
 				60B137171B7BBDE70081A522 /* Images.xcassets in Resources */,
 				60FD88D91B7C19B3001DA78F /* Menu-Normal.png in Resources */,
@@ -403,6 +412,7 @@
 				607B27751B7BC04500FE657D /* APINetworkModel.m in Sources */,
 				60FD88C01B7BFA7B001DA78F /* Tag.m in Sources */,
 				607B277B1B7BC72400FE657D /* ARGramTableViewCell.m in Sources */,
+				600CC19A1B7CF53400FCCE3A /* ARScrollNavigationChief.m in Sources */,
 				607B27721B7BC01000FE657D /* ARTagArtistFeedViewController.m in Sources */,
 				60B1370C1B7BBDE70081A522 /* main.m in Sources */,
 			);
