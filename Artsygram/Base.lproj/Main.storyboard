@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewe-cE-QJL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewe-cE-QJL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -10,8 +12,15 @@
             <string>AGaramondPro-Regular</string>
             <string>AGaramondPro-Regular</string>
             <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
+            <string>AGaramondPro-Regular</string>
         </mutableArray>
         <mutableArray key="ITC_Avant_Garde_Gothic__Demi.ttf">
+            <string>AvantGardeGothicITCW01Dm</string>
             <string>AvantGardeGothicITCW01Dm</string>
             <string>AvantGardeGothicITCW01Dm</string>
         </mutableArray>
@@ -25,14 +34,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="qRp-So-wtu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP TRENDING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C61-uh-ugt">
+                                    <rect key="frame" x="21" y="96" width="332" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="9CL-iP-XsE"/>
+                                        <constraint firstAttribute="width" constant="332" id="CK2-IM-XLE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvantGardeGothicITCW01Dm" family="Avant Garde Gothic ITCW01Dm" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zki-r8-PC3">
+                                    <rect key="frame" x="199" y="158" width="162" height="30"/>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-Gf-ybl">
+                                    <rect key="frame" x="200" y="190" width="162" height="30"/>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAw-GQ-9Bh">
+                                    <rect key="frame" x="29" y="126" width="162" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="PoG-X6-8Ly"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeu-sL-XDd">
+                                    <rect key="frame" x="199" y="126" width="162" height="30"/>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpO-AQ-PZR">
+                                    <rect key="frame" x="29" y="158" width="162" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="J72-0j-5fW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Exl-g2-Pwq">
+                                    <rect key="frame" x="30" y="190" width="161" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="161" id="v1Q-A6-AU0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AGaramondPro-Regular" family="Adobe Garamond Pro" pointSize="19"/>
+                                    <state key="normal" title="#trendingtag">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="WAw-GQ-9Bh" firstAttribute="top" secondItem="C61-uh-ugt" secondAttribute="bottom" constant="8" id="02a-P6-STq"/>
+                                <constraint firstItem="BSe-Gf-ybl" firstAttribute="top" secondItem="Exl-g2-Pwq" secondAttribute="top" id="1EO-fV-CYt"/>
+                                <constraint firstItem="wpO-AQ-PZR" firstAttribute="top" secondItem="WAw-GQ-9Bh" secondAttribute="bottom" constant="2" id="7XN-vE-NA1"/>
+                                <constraint firstItem="zki-r8-PC3" firstAttribute="baseline" secondItem="wpO-AQ-PZR" secondAttribute="firstBaseline" id="7od-PX-cKj"/>
+                                <constraint firstItem="wpO-AQ-PZR" firstAttribute="baseline" secondItem="zki-r8-PC3" secondAttribute="firstBaseline" id="9Vx-vy-lMD"/>
+                                <constraint firstItem="WAw-GQ-9Bh" firstAttribute="top" secondItem="oeu-sL-XDd" secondAttribute="top" id="AYe-zm-fnz"/>
+                                <constraint firstItem="BSe-Gf-ybl" firstAttribute="leading" secondItem="Exl-g2-Pwq" secondAttribute="trailing" constant="9" id="Gwi-D7-4Fx"/>
+                                <constraint firstItem="oeu-sL-XDd" firstAttribute="baseline" secondItem="WAw-GQ-9Bh" secondAttribute="firstBaseline" id="J0f-cr-KKj"/>
+                                <constraint firstAttribute="bottom" secondItem="Exl-g2-Pwq" secondAttribute="bottom" constant="24" id="LE9-fj-5tK"/>
+                                <constraint firstItem="wpO-AQ-PZR" firstAttribute="leading" secondItem="WAw-GQ-9Bh" secondAttribute="leading" id="ORH-eR-mJS"/>
+                                <constraint firstItem="Exl-g2-Pwq" firstAttribute="baseline" secondItem="BSe-Gf-ybl" secondAttribute="firstBaseline" id="Psf-HB-nUJ"/>
+                                <constraint firstAttribute="trailing" secondItem="oeu-sL-XDd" secondAttribute="trailing" constant="14" id="R7X-LH-iYq"/>
+                                <constraint firstItem="BSe-Gf-ybl" firstAttribute="baseline" secondItem="Exl-g2-Pwq" secondAttribute="firstBaseline" id="SqJ-4O-Wi4"/>
+                                <constraint firstItem="WAw-GQ-9Bh" firstAttribute="baseline" secondItem="oeu-sL-XDd" secondAttribute="firstBaseline" id="SwZ-cR-rnD"/>
+                                <constraint firstItem="WAw-GQ-9Bh" firstAttribute="trailing" secondItem="wpO-AQ-PZR" secondAttribute="trailing" id="TeL-ak-blx"/>
+                                <constraint firstItem="oeu-sL-XDd" firstAttribute="leading" secondItem="zki-r8-PC3" secondAttribute="leading" id="VCx-Cg-Ep3"/>
+                                <constraint firstItem="Exl-g2-Pwq" firstAttribute="top" secondItem="wpO-AQ-PZR" secondAttribute="bottom" constant="2" id="XbW-Bl-MdI"/>
+                                <constraint firstItem="C61-uh-ugt" firstAttribute="leading" secondItem="qRp-So-wtu" secondAttribute="leading" constant="21" id="ZXq-ge-Ksv"/>
+                                <constraint firstItem="oeu-sL-XDd" firstAttribute="trailing" secondItem="zki-r8-PC3" secondAttribute="trailing" id="gYP-wu-pdk"/>
+                                <constraint firstAttribute="trailing" secondItem="BSe-Gf-ybl" secondAttribute="trailing" constant="13" id="kbG-iq-5yM"/>
+                                <constraint firstItem="wpO-AQ-PZR" firstAttribute="trailing" secondItem="Exl-g2-Pwq" secondAttribute="trailing" id="obS-me-Haz"/>
+                                <constraint firstItem="zki-r8-PC3" firstAttribute="top" secondItem="wpO-AQ-PZR" secondAttribute="top" id="p3S-po-Q84"/>
+                                <constraint firstItem="wpO-AQ-PZR" firstAttribute="centerX" secondItem="Exl-g2-Pwq" secondAttribute="centerX" id="qcl-Y9-Iei"/>
+                                <constraint firstItem="oeu-sL-XDd" firstAttribute="leading" secondItem="WAw-GQ-9Bh" secondAttribute="trailing" constant="8" id="tFI-Id-his"/>
+                                <constraint firstItem="WAw-GQ-9Bh" firstAttribute="leading" secondItem="qRp-So-wtu" secondAttribute="leading" constant="29" id="wp5-en-ihz"/>
+                                <constraint firstItem="C61-uh-ugt" firstAttribute="top" secondItem="qRp-So-wtu" secondAttribute="top" constant="96" id="zR1-8a-J3q"/>
+                            </constraints>
+                        </view>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="bGD-qz-ZPv" id="jyh-xa-mtM"/>
                             <outlet property="delegate" destination="bGD-qz-ZPv" id="UhY-o8-EsM"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ki0-FL-hWC"/>
                     <connections>
+                        <outletCollection property="trendingTags" destination="WAw-GQ-9Bh" id="Id3-pk-g6a"/>
+                        <outletCollection property="trendingTags" destination="wpO-AQ-PZR" id="Fco-Ce-uoH"/>
+                        <outletCollection property="trendingTags" destination="Exl-g2-Pwq" id="3cl-37-tLg"/>
+                        <outletCollection property="trendingTags" destination="oeu-sL-XDd" id="yTk-iP-T3T"/>
+                        <outletCollection property="trendingTags" destination="zki-r8-PC3" id="pmK-28-cVe"/>
+                        <outletCollection property="trendingTags" destination="BSe-Gf-ybl" id="yob-DO-NAH"/>
                         <segue destination="EDQ-Pa-A4k" kind="push" identifier="show_tag" id="yZL-eT-hSI"/>
                     </connections>
                 </tableViewController>

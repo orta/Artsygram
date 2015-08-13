@@ -10,14 +10,14 @@ pod 'Artsy+UIColors'
 pod 'UIView+BooleanAnimations'
 
 plugin 'cocoapods-keys', {
-    :project => "Artsy",
+    :project => "Artsygram",
     :keys => [
     "ArtsyAPI2ClientSecret",
     "ArtsyAPI2ClientKey",
     ]
 }
 
-if %w(orta ash artsy laura eloy sarahscott).include?(ENV['USER']) || ENV['CI'] == 'true'
+if %w(orta ash artsy laura eloy sarahscott jorystiefel).include?(ENV['USER']) || ENV['CI'] == 'true'
   pod 'Artsy+UIFonts', '1.0.0'
 else
   pod 'Artsy+OSSUIFonts'
