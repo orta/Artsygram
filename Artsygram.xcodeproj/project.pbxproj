@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0382E057A99BACFDCC0CE6E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F1025D2CB449B1C841617 /* libPods.a */; };
+		0C2C93121B7D11A30036CC16 /* trendingtoggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C2C93111B7D11A30036CC16 /* trendingtoggle@2x.png */; };
+		0C2C93141B7D13310036CC16 /* featuredigs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C2C93131B7D13310036CC16 /* featuredigs@2x.png */; };
 		600CC1901B7CCB2900FCCE3A /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC18F1B7CCB2900FCCE3A /* Artist.m */; };
 		600CC1931B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CC1921B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.m */; };
 		600CC1951B7CE44E00FCCE3A /* InstagramCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600CC1941B7CE44E00FCCE3A /* InstagramCell.xib */; };
@@ -57,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		008D504C7B0DD7E6BD3F0DE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0C2C93111B7D11A30036CC16 /* trendingtoggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trendingtoggle@2x.png"; sourceTree = "<group>"; };
+		0C2C93131B7D13310036CC16 /* featuredigs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "featuredigs@2x.png"; sourceTree = "<group>"; };
 		600CC18E1B7CCB2900FCCE3A /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		600CC18F1B7CCB2900FCCE3A /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		600CC1911B7CD1DC00FCCE3A /* ArtsyV2AuthRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtsyV2AuthRouter.h; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 		60B137091B7BBDE70081A522 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C2C93111B7D11A30036CC16 /* trendingtoggle@2x.png */,
+				0C2C93131B7D13310036CC16 /* featuredigs@2x.png */,
 				600CC19B1B7CFAC700FCCE3A /* full_logo_white_small@2x.png */,
 				60FD88E21B7C23AF001DA78F /* instagram_logo.png */,
 				60FD88E31B7C23AF001DA78F /* instagram_comments.png */,
@@ -337,6 +343,7 @@
 			files = (
 				60FD88E71B7C23AF001DA78F /* instagram_heart.png in Resources */,
 				60B137151B7BBDE70081A522 /* Main.storyboard in Resources */,
+				0C2C93141B7D13310036CC16 /* featuredigs@2x.png in Resources */,
 				60FD88D71B7C19B3001DA78F /* BackArrow-Selected.png in Resources */,
 				60B1371A1B7BBDE70081A522 /* LaunchScreen.xib in Resources */,
 				60FD88E61B7C23AF001DA78F /* instagram_comments.png in Resources */,
@@ -357,6 +364,7 @@
 				60FD88C81B7C01AF001DA78F /* artist_split.png in Resources */,
 				600CC19C1B7CFAC700FCCE3A /* full_logo_white_small@2x.png in Resources */,
 				60FD88E51B7C23AF001DA78F /* instagram_logo.png in Resources */,
+				0C2C93121B7D11A30036CC16 /* trendingtoggle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
