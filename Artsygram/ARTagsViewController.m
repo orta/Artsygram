@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
     
+    // Clear the tag button labels so they don't flash before the data loads
+    for( UIButton* tagButton in _trendingTags ) {
+        [tagButton setTitle:@"" forState:UIControlStateNormal];
+    }
+    
     _network = [[APINetworkModel alloc] init];
     
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"tag"];
