@@ -5,6 +5,7 @@
 #import "APINetworkModel.h"
 #import "Tag.h"
 #import "ARScrollNavigationChief.h"
+#import "ARGramTableViewCell.h"
 
 @interface ARTagsViewController()
 @property (strong) Tag *selectedTag;
@@ -18,36 +19,46 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    
+
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    self.tableView.rowHeight = 400;
+    [self.tableView registerNib:[UINib nibWithNibName:@"InstagramCell" bundle:nil] forCellReuseIdentifier:@"gram"];
+
     // Clear the tag button labels so they don't flash before the data loads
-    for( UIButton* tagButton in _trendingTags ) {
+    for( UIButton *tagButton in _trendingTags ) {
         [tagButton setTitle:@"" forState:UIControlStateNormal];
     }
-    
+
     _network = [[APINetworkModel alloc] init];
     
     [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"tag"];
-    _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"tag" configureCellBlock:^(UITableViewCell *cell, Tag *tag) {
-        cell.textLabel.text = tag.name;
+    _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"gram" configureCellBlock:^(ARGramTableViewCell *cell, Gram *gram) {
+        cell.gram = gram;
     }];
-    
+
     self.tableView.dataSource = _dataSource;
     
     [_network getLatestTags:^(NSArray *tags) {
-        _dataSource.items = tags;
-        [self.tableView reloadData];
-        
-        int index = 0; // hacky
-        for( UIButton* tagButton in _trendingTags ) {
+
+        for (UIButton *tagButton in _trendingTags ) {
+            NSInteger index = [_trendingTags indexOfObject:tagButton];
             [tagButton setTitle:[NSString stringWithFormat:@"#%@",[tags[index] name]] forState:UIControlStateNormal];
             [tagButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchDown];
             tagButton.tag = index;
-            index++;
         }
         
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         NSLog(@"failed");
     }];
+
+    [self.network getFreshGrams:^(NSArray *grams) {
+        _dataSource.items = grams;
+        [self.tableView reloadData];
+
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        NSLog(@"failed");
+    }];
+
 }
 
 - (void)buttonPressed:(UIButton *)button

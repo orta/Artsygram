@@ -41,12 +41,24 @@
     return self;
 }
 
+
+- (void)getFreshGrams:(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
+{
+    [self getGramsforAddress:@"https://gramophone-production.herokuapp.com/api/grams" :success failure:failure];
+}
+
+
 - (void)getGramsforTag:(Tag *)tag :(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *address = [NSString stringWithFormat:@"https://gramophone-production.herokuapp.com/api/grams?tag=%@", tag.name];
+    [self getGramsforAddress:address :success failure:failure];
+}
+
+- (void)getGramsforAddress:(NSString *)address :(void (^)(NSArray *grams))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
+{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:address parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *json) {
-        
+
         NSArray *grams = json[@"_embedded"][@"grams"];
         success([grams map:^id(NSDictionary *dict) {
             Gram *gram = [[Gram alloc] init];
@@ -57,14 +69,13 @@
             gram.heartCount = [dict[@"data"][@"likes"][@"count"] integerValue];
             return gram;
         }]);
-        
+
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
         failure(operation.request, operation.response, error, operation.responseObject);
     }];
-
-    return;
 }
+
 
 - (void)getLatestTags:(void (^)(NSArray *tags))success failure:(void (^)(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON))failure
 {
