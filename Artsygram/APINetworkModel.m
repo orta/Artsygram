@@ -53,6 +53,8 @@
             gram.instagramAddress = dict[@"data"][@"link"];
             gram.instagramImageAddress = dict[@"data"][@"images"][@"standard_resolution"][@"url"];
             gram.instagramAvatarAddress = dict[@"data"][@"user"][@"profile_picture"];
+            gram.commentCount = [dict[@"data"][@"comments"][@"count"] integerValue];
+            gram.heartCount = [dict[@"data"][@"likes"][@"count"] integerValue];
             return gram;
         }]);
         

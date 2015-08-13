@@ -18,6 +18,7 @@ static void *ARNavigationControllerScrollingChiefContext = &ARNavigationControll
     [super awakeFromNib];
     sharedInstance = self;
 
+    [self setNeedsStatusBarAppearanceUpdate];
     [ARScrollNavigationChief.chief addObserver:self forKeyPath:@"allowsMenuButtons" options:NSKeyValueObservingOptionNew context:ARNavigationControllerScrollingChiefContext];
 }
 
@@ -48,9 +49,13 @@ static AppViewController *sharedInstance;
     }];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-
     if (context == ARNavigationControllerScrollingChiefContext) {
         // All hail the chief
         ARScrollNavigationChief *chief = object;

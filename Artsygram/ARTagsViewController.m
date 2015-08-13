@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blackColor];
     
     // Clear the tag button labels so they don't flash before the data loads
     for( UIButton* tagButton in _trendingTags ) {

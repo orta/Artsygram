@@ -1,9 +1,8 @@
 #import <UIKit/UIKit.h>
+@class Gram;
 
 @interface ARGramTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *gramTitleLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *gramPreviewImage;
-@property (weak, nonatomic) IBOutlet UIImageView *gramAuthorPreviewImage;
+@property (nonatomic, strong) Gram *gram;
 
 @end

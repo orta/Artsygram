@@ -2,7 +2,6 @@
 #import "APINetworkModel.h"
 #import "ARGramTableViewCell.h"
 #import <APLArrayDataSource/APLArrayDataSource.h>
-#import <AFNetworking/UIKit+AFNetworking.h>
 #import "Gram.h"
 #import "Tag.h"
 #import <AFWebViewController/AFWebViewController.h>
@@ -20,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
     NSString *searchTitle = [NSString stringWithFormat:@"#%@", self.tag.name];
     [AppViewController sharedInstance].searchQueryLabel.text = searchTitle;
@@ -30,16 +30,7 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     _dataSource = [[APLArrayDataSource alloc] initWithItems:@[] cellIdentifier:@"gram" configureCellBlock:^(ARGramTableViewCell *cell, Gram *gram) {
-       
-        cell.gramTitleLabel.text = gram.title;
-        
-        NSURL *previewURL = [NSURL URLWithString:gram.instagramImageAddress];
-        cell.gramPreviewImage.image = nil;
-        [cell.gramPreviewImage setImageWithURL:previewURL];
-        
-        NSURL *avatarURL = [NSURL URLWithString:gram.instagramAvatarAddress];
-        cell.gramAuthorPreviewImage.image = nil;
-        [cell.gramAuthorPreviewImage setImageWithURL:avatarURL];
+        cell.gram = gram;
     }];
     self.tableView.dataSource = _dataSource;
     
@@ -52,7 +43,7 @@
     }];
 
     [self.network getArtistDetailsForArtistURL:self.tag.artistAddress :^(id artist) {
-        self.artistNameLabel.text = artist[@"name"];
+        self.artistNameLabel.text = [artist[@"name"] uppercaseString];
         self.artistLocationAgeLabel.text = [NSString stringWithFormat:@"%@, born %@", artist[@"nationality"], artist[@"birthday"]];
 
         int followers = arc4random_uniform(9999);
@@ -72,7 +63,9 @@
     Gram *gram = [self.dataSource itemAtIndexPath:indexPath];
     AFWebViewController *controller = [[AFWebViewController alloc] initWithAddress:gram.instagramAddress];
     [self.navigationController pushViewController:controller animated:YES];
+    [[AppViewController sharedInstance] showNav:YES animated:YES];
 }
+
 
 - (APINetworkModel *)network
 {
