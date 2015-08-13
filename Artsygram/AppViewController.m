@@ -31,8 +31,11 @@ static AppViewController *sharedInstance;
 
 - (void)showNav:(BOOL)show animated:(BOOL)animates
 {
+    UINavigationController *nav = [self insideNavController];
+    BOOL allowBack = nav.viewControllers.count > 1;
+
     [UIView animateIf:animates duration:0.15 :^{
-        self.backButton.alpha = show;
+        self.backButton.alpha = allowBack && show;
         self.searchBar.alpha = show;
         self.searchQueryLabel.alpha = show;
     }];
@@ -66,16 +69,21 @@ static AppViewController *sharedInstance;
     }
 }
 
-- (IBAction)tappedBackButton:(id)sender
+- (UINavigationController *)insideNavController
 {
     for (id controller in self.childViewControllers) {
         if ([controller isKindOfClass:UINavigationController.class]) {
-            
-            UINavigationController *nav = controller;
-            if (nav.viewControllers.count) {
-                [nav popViewControllerAnimated:YES];
-            }
+            return controller;
         }
+    }
+    return nil;
+}
+
+- (IBAction)tappedBackButton:(id)sender
+{
+    UINavigationController *nav = [self insideNavController];
+    if (nav.viewControllers.count) {
+        [nav popViewControllerAnimated:YES];
     }
 }
 
